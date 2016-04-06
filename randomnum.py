@@ -27,6 +27,3 @@ while guess != number:
         prompt = "Higher! Guess again"
 
     print (prompt)
-
-
-    
