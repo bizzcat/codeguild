@@ -1,0 +1,24 @@
+Pick a secret word. Prompt the user: Show the user blank spaces
+for every un-guessed letter in that word and the actual letter
+for those which have been guessed correctly. Show the user a
+list of previously guessed incorrect letters. Let the user enter
+a new letter, then repeat. Let the user make only up to six mistakes.
+
+If the word was "cat", the prompt should look something like:
+Word: _A_
+Misses: B, D
+Mistakes Remaining: 4
+
+Advanced:
+Try to minimize the number of variables you save outside of
+your guessing loop. I claim you can do it in two variables.
+In addition to printing out the the blank spaces, try printing
+out a stick figure as mistakes are made.
+
+Extra Advanced:
+Take any word.
+Take it from a large dictionary. or take it from a file containing a bunch of words  ***Instead of a dictionary, you can use a list. or even more fun, take a random word from a long string by itemizing them by splitting along spaces in the string.
+No errors with words that have double letters.
+Have it only track two variables the whole time. Word, and all_user_guesses.
+Have a hanging man wave goodbye in the closing message. Have him wave by clearing the system and updating his arm back and forth.
+User can select game difficulty
