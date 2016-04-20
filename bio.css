@@ -1,0 +1,133 @@
+body {
+    margin-right: 12px;
+    margin-left: 12px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(50, 0, 0, 0.25), rgba(0, 0, 0, 0.1), rgba(0, 50, 0, 0.25), rgba(0, 0, 0, 0.1), rgba(0, 0, 50, 0.25), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to right, rgba(15, 0, 0, 0.1), rgba(20, 0, 0, 0.25), rgba(0, 60, 0, 0.25), rgba(0, 0, 20, 0.25), rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1), rgba(0, 0, 20, 0.25), rgba(0, 60, 0, 0.25), rgba(20, 0, 0, 0.25), rgba(15, 0, 0, 0.1));
+    border: 4px double rgba(0, 40, 120, .4);
+    border-radius: 1.5em;
+}
+
+.centered {
+    text-align: center
+}
+
+section {
+    margin-right: 30%;
+    margin-left: 30%
+}
+
+fieldset {
+    display: block;
+    margin: 42px;
+    -webkit-padding-before: 0.70em;
+    -webkit-padding-start: 1.5em;
+    -webkit-padding-end: 1.5em;
+    -webkit-padding-after: 1.25em;
+    min-width: -webkit-min-content;
+    border: 2px ridge rgba(0, 60, 180, .4);
+    border-radius: 1.5em 1.5em 0em 0em;
+
+}
+
+a {
+    color: cornflowerblue;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: moccasin;
+    cursor: crosshair;
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+
+.clear-float {
+    clear: both
+}
+
+.overflow {
+    overflow: auto;
+}
+
+ul > ul > li {
+    list-style-image: url('finger_emoji.png') 4px;
+    padding-left: 1em;
+}
+
+ul > ol > li {
+    list-style-image: url('finger_emoji.png') 4px;
+    padding-left: 1em;
+}
+
+
+list-style: square inside url("http://cliparts.co/cliparts/5TR/KAR/5TRKARgTa.png");
+
+
+font-family
+color
+text-shadow
+background-color   -style -image -position -repeat -scroll
+background-style
+margin
+padding-left   -right -top -bottom
+padding
+
+<body> add background color and
+    <header>
+        <fieldset>
+            <legend><h1>
+
+    <section>
+        <p>
+        ...
+        ...
+    <h4> website link
+    <section> interests
+        <h2>
+        <ul>
+            <li>
+            ...
+            ...
+    <section>
+        <h2> fav blogs
+        <ul>
+            <li>
+            ...
+            ...
+    <section>
+        <h2> orgs
+        <ul>
+            <li> <a> links
+            ...
+            ...
+    <section>
+        <h2>
+        <ul>
+            <li><h3> Lived
+            <ol>
+                <li>
+                ...
+                ...
+            <i><h3> been
+            <ul>
+                <li>
+                ...
+                ...
+    <section>
+        <h2> fav quotes
+        <h4> title
+        <blockquote>
+        <h4> title
+        <blockquote>
+    <section>
+        <form>
+            <div>
+            <div>
+            <div>
+....
+
