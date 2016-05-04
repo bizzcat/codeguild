@@ -1,0 +1,127 @@
+@media (min-width:401px) {
+    nav {
+        float: left;
+        width: 20%;
+        margin-left: 0%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        margin-right: 26%;
+        margin-left: 26%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        padding: 0.3em 1.7em 2em;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(360, 360, 360, 0.03), rgba(360, 360, 360, 0.06));
+        border: 3px;
+        border-style: double none;
+        border-style: none none double none;
+        border-color: rgba(0, 40, 120, .4);
+        border-radius: 1em;
+    }
+}
+
+
+body {
+    margin-right: 12px;
+    margin-left: 12px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(50, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 50, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 50, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    background: linear-gradient(to right, rgba(15, 0, 0, 0.25), rgba(20, 0, 0, 0.1), rgba(0, 60, 0, 0.25), rgba(0, 0, 20, 0.1), rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.25), rgba(0, 0, 20, 0.1), rgba(0, 60, 0, 0.25), rgba(20, 0, 0, 0.1), rgba(15, 0, 0, 0.25));
+    background: linear-gradient(to right, rgba(20, 0, 0, 0.25), rgba(20, 0, 0, 0.25), rgba(20, 60, 0, 0.25), rgba(0, 60, 20, 0.25), rgba(10, 10, 40, 0.25), rgba(40, 10, 10, 0.25), rgba(10, 40, 10, 0.25), rgba(10, 10, 40, 0.25), rgba(40, 10, 10, 0.25), rgba(10, 40, 10, 0.25), rgba(20, 60, 0, 0.25), rgba(0, 60, 20, 0.25), rgba(20, 0, 0, 0.25), rgba(20, 0, 0, 0.25));
+    background: linear-gradient(to top right, rgba(15, 0, 0, 0.25), rgba(20, 10, 0, 0.25), rgba(30, 20, 10, 0.25), rgba(20, 30, 20, 0.25), rgba(10, 20, 30, 0.25), rgba(15, 10, 20, 0.25), rgba(15, 0, 10, 0.25), rgba(15, 0, 0, 0.25), rgba(20, 10, 0, 0.25), rgba(30, 20, 10, 0.25), rgba(20, 30, 20, 0.25), rgba(10, 20, 30, 0.25), rgba(15, 10, 20, 0.25), rgba(15, 0, 10, 0.25), rgba(15, 0, 0, 0.25), rgba(20, 10, 0, 0.25), rgba(30, 20, 10, 0.25), rgba(20, 30, 20, 0.25), rgba(10, 20, 30, 0.25), rgba(15, 10, 20, 0.25), rgba(15, 0, 10, 0.25));
+    background: linear-gradient(to right, rgba(30, 0, 0, 0.25), rgba(20, 0, 0, 0.1), rgba(0, 20, 0, 0.1), rgba(0, 0, 20, 0.1), rgba(10, 10, 12, 0.25), rgba(12, 10, 10, 0.25), rgba(10, 12, 10, 0.25), rgba(10, 10, 12, 0.25), rgba(12, 10, 10, 0.25), rgba(10, 12, 10, 0.25), rgba(10, 10, 12, 0.25), rgba(12, 10, 10, 0.25), rgba(10, 12, 10, 0.25), rgba(10, 10, 12, 0.25), rgba(12, 10, 10, 0.25), rgba(10, 12, 10, 0.25), rgba(10, 10, 12, 0.25), rgba(0, 0, 20, 0.1), rgba(0, 20, 0, 0.1), rgba(20, 0, 0, 0.1), rgba(30, 0, 0, 0.25));
+    border: 4px rgba(0, 40, 120, .4);
+    border-style: none double;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(2, 2, 5, 0.9);
+}
+
+section {
+    margin-right: 26%;
+    margin-left: 26%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding: 0.3em 1.7em 2em;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(360, 360, 360, 0.03), rgba(360, 360, 360, 0.06));
+    border: 3px;
+    border-style: double none;
+    border-style: none none double none;
+    border-color: rgba(0, 40, 120, .4);
+    border-radius: 1em;
+}
+
+header {
+    margin-right: 19%;
+    margin-left: 19%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+fieldset {
+    padding: 0.7em 1.5em 1.5em 1.25em;
+    border: 2px ridge rgba(0, 60, 180, .4);
+    border-radius: 1.5em 1.5em 0em 0em;
+    border: 3px dotted rgba(0, 40, 120, .4);
+    border-style: double none;
+    border-color: rgba(0, 40, 120, .4);
+    border-radius: 1.5em;
+}
+
+a {
+    color: rgba(100, 0, 0, 0.35);
+    text-decoration: underline;
+    cursor: crosshair;
+}
+
+img {
+    height: 33%;
+    width: 50%;
+    border: 2px groove rgba(120, 0, 0, 0.35);
+}
+
+ul {
+    padding: 0em 0.5em;
+    margin: 0em;
+}
+
+li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li:before {
+    content: "\261E";
+    margin: 0 1em;
+    color: rgba(120, 0, 0, 0.65);
+}
+
+blockquote {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.75em;
+}
+
+
+
+.more-padding {
+    padding: 0em .8em;
+}
+
+.centered {
+    text-align: center;
+}
+
+.flexedrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+}

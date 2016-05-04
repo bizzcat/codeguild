@@ -1,0 +1,37 @@
+body {
+    margin: 20px;
+    background-color: rgba(0, 0, 360, 0.5);
+}
+
+.big-div {
+    margin: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(360, 0, 0, 0.5);
+}
+
+div > div {
+    margin: 10px;
+    height: 80%;
+    background-color: rgba(0, 360, 0, 0.5);
+}
+
+#big-box {
+    flex-grow: 4;
+}
+
+#little-box {
+    flex-grow: 1;
+}
+
+.row1 {
+    width: 100%;
+}
+
+
+.row3 {
+    flex-basis: 20%;
+    margin: 10px 20px;
+}
+

@@ -1,0 +1,91 @@
+<!--Create a new web page with a form that solicits people's feedback
+on their dinner yesterday.-->
+
+<!--Provide:-->
+
+<!--A text box for single line description of what they ate dinner.-->
+<!--A selection of checkboxes for "meat", "potatoes", "broccoli",
+"cheese" and have them select if any of them were eaten.-->
+<!--A radio button where they can select if they were vegetarian or non.-->
+<!--A drop-down menu of ice cream flavors and have them select their
+favorite.-->
+<!--A free-form text field where they can talk about their most memorable
+dinner ever.-->
+<!--A button to press if they're hungry.-->
+<!--A button to submit.-->
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>The Dinner Chronicles</title>
+</head>
+<body>
+    <header>
+        <h3>Here, we will be discussing and then disecting yesterday's dinner.<br></h3>
+    </header>
+    <form action="/my-food-quiz" method="post">
+        <div>
+            <label>Description of your dinner (140 character or less)<br>
+            <input type="text" name="dinner" maxlength="140" placeholder="&quot;A molassassey mix of biscuits and gravy...&quot;" />
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Was one of these items in your dinner?<br>
+                <select name="foods" multiple>
+                    <option value="meat" selected>Meat</option>
+                    <option value="potatoes">Potatoes</option>
+                    <option value="broccoli">Broccoli</option>
+                    <option value="cheese">Cheese</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Are you a vegetarian?<br></legend>
+                <label><input type="radio" name="vegetarian" value="vegetarian">Yes, I love animals<br></label>
+                <label><input type="radio" name="vegetarian" value="omnivore">No, I'm an omnivorous meat eating pig<br></label>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <label>Favorite ice cream flavor:<br>
+                <select name="favorite">
+                    <option value="sherbert">Sherbert</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="rockyroad">Rocky Road</option>
+                    <option value="cookiedough">Cookie Dough</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Most Memorable Dinner:<br>
+                <textarea name="memorable" placeholder="&quot;My most memorable dinner was...&quot;"></textarea>
+            </label>
+        </div>
+        <br>
+        <div class="button">
+            <label>Are you hungry? If yes,
+                <button type="button" name="hungry">click this button!</button>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Upload an image of your favorite chopsticks:
+                <input type="file" name="user_picture" />
+            </label>
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit">Submit your dinner form</button>
+        </div>
+    </form>
+</body>
+
+
+
+</html>
