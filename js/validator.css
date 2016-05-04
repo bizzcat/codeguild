@@ -1,0 +1,75 @@
+/*MAIN CONTAINER*/
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/*INPUT FORM*/
+form {
+  width: 150px;
+  padding: 20px 150px 20px 30px;
+  margin: 10px;
+  border: 2px outset rgba(10, 10, 10, 0.5);
+  background-color: rgba(100, 10, 10, 0.02);
+}
+
+input {
+  margin: 10px;
+}
+
+
+/* ALERT MESSAGE */
+p {
+  margin: 25px;
+  padding: 20px 60px 20px 60px;
+  text-align: center;
+  font-size: 15px;
+}
+
+p:before {
+  content: "Alert:    ";
+  font-size: 25px;
+  color: rgba(240, 10, 10, 0.65);
+}
+
+
+/* ON BLUR EVENT */
+.blur-event {
+  background-color: yellow;
+}
+
+/*ON FOCUS*/
+.focus-event {
+  background-color: lightyellow;
+}
+
+/*ON INVALID ENTRY*/
+.invalid-entry {
+  background-color: tomato;
+}
+
+/*ON VALID ENTRY*/
+.valid-entry {
+  background-color: rgba(0, 200, 0, 0.5);
+}
+
+
+/*ON INVALID SUBMISSION*/
+
+/*ON VALID SUBMISSION*/
+
+
+
+
+
+
+
+
+
+
+
+/**/
