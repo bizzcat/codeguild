@@ -1,0 +1,121 @@
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to {
+    width: 40px;
+    height: 40px;
+    transform: rotate(360deg);
+  }
+
+}
+
+#spin {
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+
+
+
+
+/* ~~~ div container for die articles ~~~ */
+div {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ~~~ die article ~~~ */
+article {
+  padding: 12px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-width: 3.75px;
+  border-style: outset;
+  border-radius: 9px;
+  border-color: rgba(10, 10, 10, 0.125);
+  background-color: rgba(0, 0, 0, 0.075);
+  box-shadow: 7px 7px 6px rgba(10, 10, 10, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+button {
+  width: 155px;
+  height: 155px;
+  fill: none;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+/* ~~~ first die ~~~ */
+.die-one {
+  justify-content: center;
+  align-items: center;
+}
+
+/* ~~~ second die ~~~ */
+.die-two {
+  justify-content: space-between;
+}
+.die-two .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+/* ~~~ third die ~~~ */
+.die-three {
+  justify-content: space-between;
+}
+.die-three .dot:nth-of-type(2) {
+  align-self: center;
+}
+.die-three .dot:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+/* ~~~ fourth and sixth die ~~~ */
+.die-four, .die-six {
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+
+/* ~~~ fifth die ~~~ */
+.die-five {
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.die-five .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* ~~~ die dots ~~~ */
+.dot {
+  margin: 1px;
+  border-width: 2.5px;
+  border-style: inset;
+  border-radius: 50%;
+  border-color: rgba(255, 10, 10, 0.6);
+  background-color: rgba(255, 0, 0, 0.5);
+}

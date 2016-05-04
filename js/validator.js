@@ -61,6 +61,7 @@ function onInvalidEntry(entryID) {
 
 function onValidEntry(entryID) {
   $(entryID).attr("class", "valid-entry");
+  $("p").remove();
 }
 
 
