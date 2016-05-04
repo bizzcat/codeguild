@@ -1,0 +1,22 @@
+img {
+  height: 300px;
+  width: 300px;
+  border: 5px solid black;
+}
+
+
+article {
+  height: 350px;
+  width: 300px;
+  display: inline;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
