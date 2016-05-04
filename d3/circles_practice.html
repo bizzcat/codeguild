@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Three little circles practice</title>
+  </head>
+
+
+<svg width="720" height="120">
+
+</svg>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+  var svg = d3.selectAll("svg");
+
+  var circle = svg.selectAll("circle")
+      .data([32, 57, 112, 153, 22])
+
+  var circleEnter = circle.enter().append("circle")
+      .style("fill", "steelBlue")
+      .attr("cy", 60)
+      .attr("r", function(d) { return Math.sqrt(d); })
+      .attr("cx", function(d) { return d; });
+
+</script>
+</html>
