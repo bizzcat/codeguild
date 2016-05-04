@@ -17,28 +17,29 @@
 
 
 intArray = [5, 7, 3, 9, 1, -4, 6, 3, 1, 0, 6, -2, -8, 20];
-sampleSum = 12;
+sampleSum = 10;
 
 function findSumPairs(intArray, sampleSum) {
-  var totalPairs = [];
   var matchedPairs = [];
 
   for (var i = 0; i < intArray.length; i++) {
     var intTarget = sampleSum - intArray[i];
-    if (totalPairs.indexOf(intTarget) === -1 ) {
-      totalPairs.push(intArray[i])
-    }
 
-    else {
-      matchedPairs.push([Math.min(intArray[i], intTarget), Math.max(intArray[i], intTarget)])
-    }
+      for (var j = 0; j < intArray.length; j++) {
+        if (i === j) { }     // this eliminates an integer from matching with itself
+        else if (intArray[j] === intTarget) {
+          var matchedPair = new Array(intArray[i], intArray[j]);
+          matchedPairs.push(matchedPair);
+        }
+      }
   }
-  return matchedPairs
+  return matchedPairs;
 }
 
 
-var matchedPairs = findSumPairs(intArray, sampleSum)
-console.log(matchedPairs)
+var matchedPairs = findSumPairs(intArray, sampleSum);
+console.log(intArray);
+console.log(matchedPairs);
 
 
 
