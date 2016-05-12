@@ -1,0 +1,19 @@
+section {
+  margin: 20px 100px;
+  border: 4px groove rgba(0, 255, 0, 0.12);
+  border-radius: 10px;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.suspense {
+  background-color: rgba(255, 0, 0, 0.075);
+}
+
+.sensation {
+  background-color: rgba(0, 255, 0, 0.075);
+}
+
+.hidden {
+  display: none;
+}

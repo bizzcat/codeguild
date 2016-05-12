@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submit Joke</title>
+  </head>
+  <body>
+
+    <h2>Submit a joke</h2>
+    <h5>Ex setup: Why did the chicken cross the playground?</h5>
+    <h5>Ex punchline: to get to the other slide! (haha!)</h5>
+
+    <form action="/submit" method="post">
+      {% csrf_token %}
+      <textarea name="joke-setup" placeholder="Joke Setup"></textarea>
+      <textarea name="joke-punchline" placeholder="Punchline"></textarea>
+      <input type="submit">
+    </form>
+    <a href="/listing">Click me to see list of jokes!</a>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="{% static 'jokes/java.js' %}"></script>
+
+  </body>
+</html>

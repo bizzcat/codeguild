@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Jokes</title>
+    <link rel="stylesheet" href="{% static 'jokes/style.css' %}">
+  </head>
+  <body>
+    <h2>Jokes</h2>
+
+    {% for joke in jokes %}
+    <section class="suspense">
+        <blockquote>{{ joke.setup }}</blockquote>
+        <blockquote class="hidden">{{ joke.punchline }}</blockquote>
+    </section>
+    {% endfor %}
+
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="{% static 'jokes/java.js' %}"></script>
+
+
+  </body>
+</html>
