@@ -21,6 +21,7 @@ def break_site_into_line_list(site):
     with urllib.request.urlopen(site) as oregon_rainfall:
         line_list = [byte_line.decode('utf-8') for byte_line in oregon_rainfall]
     return line_list
+
 def clean_the_data(line_list):
     top_skimmed = line_list[11:-1]
     clean_data_list = []

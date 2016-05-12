@@ -11,7 +11,7 @@ var seed = {i: 0, x: 420, y: 600, a: 0, l: 100, d: 0};
 var da = 0.3;
 var dl = 0.85;
 var ar = 0.3;
-var maxDepth = 4;
+var maxDepth = 7;
 
 
 function branch(b) {

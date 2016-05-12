@@ -3,14 +3,13 @@ import random
 punctuation_list = ['.', ',', '\'', '"', '-', '_', ';', ':', '!', '?', '[]', '()', ' ', '=', '+', '~']
 punctuation_string = '.,\'"-_;:!?[]() =+*~'
 
-#
-# file_name = 'sample_text.txt'
+file_name = 'gitanjali.txt'
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ WORD COUNT FUNCTIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def get_file_name_from_user():
-    print ('Please select the .txt file you would like to analyse:')
-    file_name = input('')
-    return file_name
+# def get_file_name_from_user():
+#     print ('Please select the .txt file you would like to analyse:')
+#     file_name = input('')
+#     return file_name
 
 def open_text_file(file_name):
     with open(file_name) as sample_text_file:
