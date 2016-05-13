@@ -1,11 +1,6 @@
 from . import logic
 from django.http import HttpResponse
 
-# def render_page(request):
-#     """Renders the HTML for some random page."""
-#     return HttpResponse('This will be HTML.')
-
-
 
 def find_count_for_word(request):
     word = request.GET['w']

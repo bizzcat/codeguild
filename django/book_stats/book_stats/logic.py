@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 def open_text_file(file_name):
     with open(file_name) as sample_text_file:
         sample_text = sample_text_file.readlines()
