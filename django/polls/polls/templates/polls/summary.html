@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Poll Submission page</title>
+  </head>
+  <body>
+
+    <audio autoplay>
+      <source src="static/polls/ice_cream_song.ogg" type="audio/ogg">
+    </audio>
+
+    <header>
+      <h1>ICE CREAM!</h1>
+      <h4>Results page</h4>
+      <h6> {% now "jS F Y H:i" %} </h6>
+    </header>
+
+    <table>
+      <tr>
+        <td>Flavor   </td>
+        <td>% of votes   </td>
+      </tr>
+      <tr>
+        <td>Chocolate</td>
+        <td>  {{ chocolate }}  </td>
+      </tr>
+      <tr>
+        <td>Vanilla</td>
+        <td>  {{ vanilla }}  </td>
+      </tr>
+      <tr>
+        <td>Strawberry</td>
+        <td>  {{ strawberry }}  </td>
+      </tr>
+    </table>
+
+
+
+  </body>
+</html>
