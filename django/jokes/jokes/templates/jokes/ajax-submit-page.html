@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Submit Joke</title>
+    <link rel="stylesheet" href="{% static 'jokes/style.css' %}">
   </head>
   <body>
 
@@ -11,16 +12,22 @@
     <h5>Ex setup: Why did the chicken cross the playground?</h5>
     <h5>Ex punchline: to get to the other slide! (haha!)</h5>
 
-    <form action="/submit" method="post">
+    <form>
       {% csrf_token %}
-      <textarea name="joke-setup" placeholder="Joke Setup"></textarea>
-      <textarea name="joke-punchline" placeholder="Punchline"></textarea>
+      <textarea id="joke-setup" placeholder="Joke Setup"></textarea>
+      <textarea id="joke-punchline" placeholder="Punchline"></textarea>
       <input type="submit">
     </form>
-    <a href="/listing">Click me to see list of jokes!</a>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
-    <script src="{% static 'jokes/java.js' %}"></script>
+
+    <br><br><br><h2>Jokes</h2>
+
+
+
+
+
 
   </body>
+  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+  <script src="{% static 'jokes/ajax-java.js' %}"></script>
 </html>

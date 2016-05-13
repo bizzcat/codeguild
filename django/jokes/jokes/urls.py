@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from . import views
+from . import ajax_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.render_submit_page, name='submit-page'),
     url(r'^submit$', views.cycle_submit_page, name='submit-page'),
     url(r'^listing$', views.render_listing_page, name='listing-page'),
+
+    url(r'^ajax$', ajax_views.render_submit_page, name='ajax-index'),
 ]
