@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <h1>ToDo List Generator</h1>
+    <form action="{% url 'add_task' %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="New Task">
+      <input type="submit" value="add">
+    </form>
+
+
+    <h1>Lists and items</h1>
+
+    {% for task in task_to_items.items %}
+    <h3>{{ task.0 }}</h3>
+
+    <form action="{% url 'add_item' task.0 %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="New item ">
+      <input type="submit" value="add">
+    </form>
+
+    <ul>
+
+      {% for item in task.1 %}
+      <li>{{ item }}  <form action="{% url 'delete_item' item %}" method="get"> <input type="submit" value="X"> </form> </li>
+      {% endfor %}
+
+    </ul>
+    {% endfor %}
+
+    </ul>
+  </body>
+</html>
+
+<!--
+Now we need to:
+- the ability to add a new list using a form
+
+- the ability to add an item to a list
+- the ability to delete an item from a list
+
+-->
