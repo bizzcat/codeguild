@@ -1,0 +1,58 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link href="{% static 'flutter/style.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>The Flut Strut</h1>
+
+    <div>
+      {% for flut in flut_list %}
+      <section>
+        <a href="{% url 'user page' flut.user_name %}"><h3>{{ flut.user_name }}</h3></a>
+        <h5>{{ flut.flut_text }}</h5>
+      </section>
+      {% endfor %}
+
+    </div>
+
+    <div class="footer-div">
+
+      <section class="footer-section">
+        <form action="{% url 'post' %}" method="post">
+          {% csrf_token %}
+          <h3>Your very own Flut</h3>
+          <h5>
+            <input style="text" name="user_name" placeholder="Your user name"><br>
+            <textarea style="text" name="flut_text" placeholder="Flit flut flat..."></textarea><br>
+            <input type="submit" value="STRUT IT">
+          </h5>
+        </form>
+      </section>
+
+      <section class="footer-section">
+        <form action="{% url 'search' %}" method="get">
+          {% csrf_token %}
+          <h3>Find-a-Flut</h3>
+          <h5>
+            <textarea style="text" name="search_text" placeholder="Ohhhh flitter where'st did thou flutter off to?"></textarea><br>
+            <input type="submit" value="FIND">
+          </h5>
+        </form>
+      </section>
+
+    </div>
+
+    <!-- text query form -->
+    <!-- user query form -->
+    <!-- add a time stamp to the submit page -->
+
+  </body>
+</html>

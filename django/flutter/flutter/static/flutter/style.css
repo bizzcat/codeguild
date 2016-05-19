@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 25px 25%;
+  padding: 5px;
+  border: 3.5px rgba(150, 30, 5, 0.3);
+  border-style: solid none;
+  border-radius: 30px;
+}
+
+section {
+  margin: 10px 75px;
+  padding: 5px 30px;
+  background-color: rgba(30, 30, 30, 0.09);
+  border: 2px rgba(20, 20, 1300, 0.2);
+  border-radius: 14px;
+}
+
+h3 {
+  margin: 2px;
+  padding: 2px;
+  width: 195px;
+  border: 1px rgba(30, 30, 30, 0.3);
+  border-style: none none solid none;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgba(60, 60, 60, 0.8);
+}
+
+h5 {
+  margin: 3px;
+  padding: 6px 3px 3px 3px;
+  font-family: serif;
+  color: rgba(30, 30, 30, 0.9);
+}
+
+textarea {
+  margin: 4px 0px;
+}
+
+
+
+.footer-div {
+  border: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-section {
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 40%;
+}

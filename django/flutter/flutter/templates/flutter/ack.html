@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+  <style>
+
+
+  </style>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ack</title>
+    <link href="{% static 'flutter/style.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>Congradumalations, that's one Flippin' Flut!</h1>
+
+    <div>
+      <section>
+        <h3>{{ user_name }}</h3>
+        <h5>{{ flut_text }}</h5>
+      </section>
+
+    </div>
+
+    <div class="footer-div">
+      <section>
+        <form action="{% url 'index' %}">
+          <h3>To the Flut Strut?</h3>
+          <input type="submit" value="Off you go">
+        </form>
+      </section>
+    </div>
+
+
+  </body>
+</html>

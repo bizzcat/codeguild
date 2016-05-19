@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+  <style>
+
+
+  </style>
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ search_text }} search</title>
+    <link href="{% static 'flutter/style.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1> Fluts flittering about with a healthy dose of '{{ search_text }}'</h1>
+
+    <div>
+      {% for search_result in fluts_to_search %}
+      <section>
+        <h3>{{ search_result.user_name }}</h3>
+        <h5>{{ search_result.flut_text }}</h5>
+      </section>
+      {% endfor %}
+
+    </div>
+
+    <div class="footer-div">
+      <section>
+        <form action="{% url 'index' %}">
+          <h3>To the Flut Strut?</h3>
+          <input type="submit" value="Off you go">
+        </form>
+      </section>
+    </div>
+
+
+  </body>
+</html>

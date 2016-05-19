@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+  <style>
+
+
+  </style>
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ user_name }}</title>
+    <link href="{% static 'flutter/style.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>{{ user_name }}'s Flitter Fluts</h1>
+
+    <div>
+      {% for user_flut in fluts_to_user %}
+      <section>
+        <h3>{{ user_flut.user_name }}</h3>
+        <h5>{{ user_flut.flut_text }}</h5>
+      </section>
+      {% endfor %}
+
+    </div>
+
+    <div class="footer-div">
+      <section>
+        <form action="{% url 'index' %}">
+          <h3>To the Flut Strut?</h3>
+          <input type="submit" value="Off you go">
+        </form>
+      </section>
+    </div>
+
+
+  </body>
+</html>
