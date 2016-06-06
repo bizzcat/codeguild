@@ -1,0 +1,38 @@
+
+
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section {
+  width: 20%;
+  /*border: 1px solid rgba(0,0,0,0.35);*/
+}
+
+button {
+
+}
+
+.navbar {
+
+}
+
+.logo {
+  flex-grow: 4;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.empty-block {
+  height: 400px;
+}
+
+.avatar {
+  width: 100%;
+  /*height: auto;*/
+}
