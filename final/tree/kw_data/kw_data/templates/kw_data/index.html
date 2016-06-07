@@ -1,7 +1,7 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html>
+<html style="background: url({% static 'kw_data/cloud-background.jpg' %}) no-repeat center center fixed; ">
   <head>
     <meta charset="utf-8">
     <title>KH portfolio</title>
@@ -10,74 +10,96 @@
   <body>
 
     <div class='navbar'>
-
       <section class='logo'>
+        <img src="{% static 'kw_data/logo.png' %}"></img>
       </section>
-
-      <section class='nav'>
-        <a>Main</a>
-      </section>
-
-      <section class='nav'>
-        <a>About Kyle</a>
-      </section>
-
-      <section class='nav'>
-        <a>Blog</a>
-      </section>
-
-      <section class='nav'>
-        <a>Contact</a>
-      </section>
+      <p class='nav'>
+        main
+      </p>
+      <p class='nav'>
+        bio
+      </p>
+      <p class='nav'>
+        blog
+      </p>
+      <p class='nav'>
+        contact
+      </p>
+      <!-- <img src="{% static 'kw_data/main2.png' %}" class='nav'></img> -->
+      <!-- <img src="{% static 'kw_data/bio.png' %}" class='nav'></img>
+      <img src="{% static 'kw_data/blog.png' %}" class='nav'></img>
+      <img src="{% static 'kw_data/contact.png' %}" class='nav'></img> -->
 
     </div>
+
 
     <div class='empty-block'>
+    </div>
+
+    <div class='chapter'>
+      <p class='chapter-logo'>visualizations</p>
+      <!-- <img src="{% static 'kw_data/visualizations-logo.png' %}" class='container-logo'></img> -->
+      <div class='container'>
+
+        <section class='demo'>
+          <img src="{% static 'kw_data/radial-collapsible.png' %}" class='avatar'></img>
+          <div class='buttons'>
+            <img src="{% static 'kw_data/github.png' %}" class='github-button'></img>
+            <img src="{% static 'kw_data/codepen.png' %}" class='codepen-button'></img>
+          </div>
+        </section>
+
+        <section class='demo'>
+          <img src="{% static 'kw_data/radial-collapsible.png' %}" class='avatar'></img>
+          <div class='buttons'>
+            <img src="{% static 'kw_data/github.png' %}" class='github-button'></img>
+            <img src="{% static 'kw_data/codepen.png' %}" class='codepen-button'></img>
+          </div>
+        </section>
+
+        <section class='demo'>
+          <img src="{% static 'kw_data/radial-collapsible.png' %}" class='avatar'></img>
+          <div class='buttons'>
+            <img src="{% static 'kw_data/github.png' %}" class='github-button'></img>
+            <img src="{% static 'kw_data/codepen.png' %}" class='codepen-button'></img>
+          </div>
+        </section>
+
+      </div>
+
+      <div class='container'>
+
+        <section class='demo'>
+          <img src="{% static 'kw_data/radial-collapsible.png' %}" class='avatar'></img>
+          <div class='buttons'>
+            <img src="{% static 'kw_data/github.png' %}" class='github-button'></img>
+            <img src="{% static 'kw_data/codepen.png' %}" class='codepen-button'></img>
+          </div>
+        </section>
+
+        <section class='demo'>
+          <img src="{% static 'kw_data/radial-collapsible.png' %}" class='avatar'></img>
+          <div class='buttons'>
+            <img src="{% static 'kw_data/github.png' %}" class='github-button'></img>
+            <img src="{% static 'kw_data/codepen.png' %}" class='codepen-button'></img>
+          </div>
+        </section>
+
+        <section class='demo'>
+          <img src="{% static 'kw_data/radial-collapsible.png' %}" class='avatar'></img>
+          <div class='buttons'>
+            <img src="{% static 'kw_data/github.png' %}" class='github-button'></img>
+            <img src="{% static 'kw_data/codepen.png' %}" class='codepen-button'></img>
+          </div>
+        </section>
+
+      </div>
 
     </div>
 
-    <div>
 
-      <section>
-        <img src="{% static 'kw_data/sample.png' %}" class='avatar'></img>
-        <div class='buttons'>
-          <button> View </button>
-          <button> GitHub </button>
-          <button> CodePen </button>
-        </div>
-      </section>
-
-      <section>
-        <img src="{% static 'kw_data/sample.png' %}" class='avatar'></img>
-        <div class='buttons'>
-          <button> View </button>
-          <button> GitHub </button>
-          <button> CodePen </button>
-        </div>
-      </section>
-
-      <section>
-        <img src="{% static 'kw_data/sample.png' %}" class='avatar'></img>
-        <div class='buttons'>
-          <button> View </button>
-          <button> GitHub </button>
-          <button> CodePen </button>
-        </div>
-      </section>
-
-      <section>
-        <img src="{% static 'kw_data/sample.png' %}" class='avatar'></img>
-        <div class='buttons'>
-          <button> View </button>
-          <button> GitHub </button>
-          <button> CodePen </button>
-        </div>
-      </section>
-
-
-    </div>
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="{% static 'kw_data/index.js' %}"></script>
   </body>
 </html>
