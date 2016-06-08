@@ -5,6 +5,9 @@ from . import logic
 def render_index(request):
     return render(request, 'kw_data/index.html')
 
+def render_tree_fun(request):
+    return render(request, 'kw_data/tree_fun.html')
+
 def render_radial_collapsible_page(request):
     '''
     * Imports data_json_object from logic and uses 'dumps' it into string format
