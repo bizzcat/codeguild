@@ -3,14 +3,17 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(25919deg);
+    /*transform: rotate(25919deg);*/
+    transform: rotate(10800deg);
+    /*width: 1px;
+    height: 1px;*/
   }
 
 }
 
 #spin {
   animation-name: spin;
-  animation-duration: 5s;
+  animation-duration: 1.8s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
@@ -21,7 +24,7 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size:cover;
+  background-size: cover;
 }
 
 
@@ -84,7 +87,11 @@ a {
 }
 
 .empty-block {
-  height: 40em;
+  /*height: 40em;*/
+  margin: 4.5em;
+  padding: 4.5em;
+  /*width: 9%;*/
+  text-align: center;
 }
 
 .chapter {

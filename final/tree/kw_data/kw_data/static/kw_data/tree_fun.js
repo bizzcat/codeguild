@@ -90,87 +90,87 @@ function regenerate(initialise) {
   setTimeout(function() {
     branch(seed14);
     create();
-  }, 1000);
+  }, 600);
   setTimeout(function() {
     branch(seed13);
     create();
-  }, 1500);
+  }, 800);
   setTimeout(function() {
     branch(seed12);
     create();
-  }, 3000);
+  }, 1000);
   setTimeout(function() {
     branch(seed11);
     create();
-  }, 4500);
+  }, 1200);
   setTimeout(function() {
     branch(seed10);
     create();
-  }, 6000);
+  }, 1400);
   setTimeout(function() {
     branch(seed9);
     create();
-  }, 7500);
+  }, 1600);
   setTimeout(function() {
     branch(seed8);
     create();
-  }, 9000);
+  }, 1800);
   setTimeout(function() {
     branch(seed7);
     create();
-  }, 10500);
+  }, 2000);
   setTimeout(function() {
     branch(seed6);
     create();
-  }, 12000);
+  }, 2200);
   setTimeout(function() {
     branch(seed5);
     create();
-  }, 13500);
+  }, 2400);
   setTimeout(function() {
     branch(seed4);
     create();
-  }, 15000);
+  }, 2600);
   setTimeout(function() {
     branch(seed3);
     create();
-  }, 16500);
+  }, 2800);
   setTimeout(function() {
     branch(seed2);
     create();
-  }, 18000);
+  }, 3000);
   setTimeout(function() {
     branch(seed1);
     create();
-  }, 19500);
+  }, 3200);
   setTimeout(function() {
     branch(seed0);
     create();
-  }, 21000);
+  }, 3400);
   setTimeout(function() {
     branch(seed);
     create();
-  }, 22500);
+  }, 3600);
   setTimeout(function() {
     branch(see5);
     create();
-  }, 24000);
+  }, 3800);
   setTimeout(function() {
     branch(see4);
     create();
-  }, 24500);
+  }, 4000);
   setTimeout(function() {
     branch(see3);
     create();
-  }, 25000);
+  }, 4200);
   setTimeout(function() {
     branch(see2);
     create();
-  }, 25500);
+  }, 4400);
   setTimeout(function() {
     branch(see1);
     create();
-  }, 26000);
+  }, 4600);
   // branch(seed11);
   // branch(seed10);
   // branch(seed9);
@@ -349,8 +349,8 @@ function endPt(b) {
 
 var color = d3.scale.linear()
     .domain([0, maxDepth * 0.4, maxDepth * 0.99, maxDepth])
-    // .range(["green","red","yellow","blue"]);
-    .range(["black","blue","white","black"]);
+    .range(["green","red","yellow","blue"]);
+    // .range(["black","blue","white","black"]);
 
 function x1(d) {return d.x;}
 function y1(d) {return d.y;}

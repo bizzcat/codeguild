@@ -5,7 +5,7 @@ var margin = {top: 20, right: 120, bottom: 20, left: 120},
     height = diameter;
 
 var i = 0,
-    duration = 350,
+    duration = 550,
     root;
 
 var tree = d3.layout.tree()
@@ -15,9 +15,9 @@ var tree = d3.layout.tree()
 var diagonal = d3.svg.diagonal.radial()
     .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width )
-    .attr("height", height )
+var svg = d3.select("body").append("div").attr("id", "visualization").append("svg")
+    .attr("width", width + 500 )
+    .attr("height", height - 100 )
     .call(d3.behavior.zoom()
       .scaleExtent([0, 3])
       .on("zoom", function () {
@@ -27,7 +27,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 root = data_json_str;
-root.x0 = height / 2;
+root.x0 = 0;
 root.y0 = 0;
 
 root.children.forEach(collapse); // start with all children collapsed
@@ -42,7 +42,7 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+  nodes.forEach(function(d) { d.y = d.depth * 380; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -62,8 +62,15 @@ function update(source) {
       // .style("fill", function(d) { return d.depth === 1 ? "green" : "black"; }) ***************************USE THIS METHOD TO GENERATE AND APPEND A TEXT BOX WHEN SOMEONE CLICKS ON AN ARTICLE
       .attr("x", 10)
       .attr("dy", ".35em")
+      .attr("font-size", function(d) {
+        if (d.depth === 0) { return "10px" }
+        else if (d.depth === 1) { return "15px" }
+        else if (d.depth === 2) { return "20px"}
+        else if (d.depth === 3) { return "25px"}
+        else { return "10px" }
+      })
       .attr("text-anchor", "start")
-      //.attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length * 8.5)  + ")"; })
+      .attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length * 8.5)  + ")"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 

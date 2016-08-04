@@ -6,14 +6,37 @@
     <meta charset="utf-8">
     <title>Radial Collapsible</title>
     <link href="{% static 'kw_data/radial_collapsible.css' %}" rel="stylesheet">
+    <link href="{% static 'index/index.css' %}" rel="stylesheet">
   </head>
 
 
   <body>
-    <div id="chart">
-      <svg>
+    <div class='navbar'>
+      <section class='logo'>
+        <img src="{% static 'index/logo.png' %}"></img>
+      </section>
+      <p class='nav'>
+        main
+      </p>
+      <p class='nav'>
+        bio
+      </p>
+      <p class='nav'>
+        blog
+      </p>
+      <p class='nav'>
+        contact
+      </p>
+      <!-- <img src="{% static 'index/main2.png' %}" class='nav'></img>
+      <img src="{% static 'index/bio.png' %}" class='nav'></img>
+      <img src="{% static 'index/blog.png' %}" class='nav'></img>
+      <img src="{% static 'index/contact.png' %}" class='nav'></img> -->
 
-      </svg>
+    </div>
+
+
+    <div id="chart">
+
     </div>
   </body>
 
@@ -22,5 +45,9 @@
   <script>
     var data_json_str = {{ data_json_str | safe }};
   </script>
+
+
+  <script src="http://code.jquery.com/jquery-2.2.3.js"></script>
   <script src="{% static 'kw_data/radial_collapsible.js' %}"></script>
+  <script src="{% static 'index/index.js' %}"></script>
 </html>

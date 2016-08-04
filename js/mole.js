@@ -64,7 +64,7 @@ function assignClickEventsToAllImages(lives) {
         var newScore = parseInt($("#score-ticker").text()) + 14;
         $("#score-ticker").text(newScore);
       }
-      }
+    }
     )
   })
 }

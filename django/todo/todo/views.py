@@ -27,3 +27,4 @@ def add_task_and_refresh(request):
     new_task = request.POST['name']
     logic.save_task(new_task)
     return render_index(request)
+ 
