@@ -16,7 +16,7 @@ def get_ten_recent_fluts():
     flut_list = models.Flut.objects.all()
 
     flut_list_len = len(flut_list) + 1
-    ten_less = int(flut_list_len - 10)
+    ten_less = int(flut_list_len - 15)
 
     return flut_list[ten_less:flut_list_len]
 
